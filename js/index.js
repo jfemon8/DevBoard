@@ -50,3 +50,8 @@ document.querySelectorAll(".task-btn").forEach((button) => {
         div.innerHTML += newDiv;
     });
 });
+
+
+document.getElementById("clear-history").addEventListener("click", function (event) {
+    document.getElementById("history").innerHTML = "";
+});

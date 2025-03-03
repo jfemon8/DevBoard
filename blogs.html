@@ -4,8 +4,99 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Blogs</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
-  <body>
-    <h1>Blogs Section</h1>
+  <body class="bg-[#F4F7FF]">
+    <section class="container mx-auto p-6">
+      <nav class="p-6 rounded-2xl bg-white flex justify-between items-center">
+        <div class="flex gap-1 items-center">
+          <img src="assets/logo.png" alt="Logo" />
+          <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+        </div>
+        <button id="back-to-desk" class="btn btn-primary">Back to Desk</button>
+      </nav>
+
+      <h1 class="text-center mt-6 text-5xl font-extrabold">Blogs</h1>
+
+      <div class="bg-white rounded-lg mt-6">
+        <p class="p-4 font-bold">
+          Question-1: What are the different ways to select an element in the
+          DOM?
+        </p>
+        <hr class="border-t-2 border-gray-200 border-dashed" />
+        <p class="p-4 opacity-80">
+          There are multiple ways to select elements in the DOM including:
+          getElementById(), getElementsByClassName(), getElementsByTagName(),
+          querySelector(), querySelectorAll(), getElementsByName(), childNodes,
+          children, closest(), matches(), document.forms, document.images,
+          document.links, etc.
+        </p>
+      </div>
+      <div class="bg-white rounded-lg mt-6">
+        <p class="p-4 font-bold">
+          Question-2: What is the difference between innerHTML, innerText, and
+          textContent?
+        </p>
+        <hr class="border-t-2 border-gray-200 border-dashed" />
+        <p class="p-4 opacity-80">
+          innerHTML gets or sets the HTML content inside an element. It can
+          contain HTML tags. innerText gets or sets the visible text content
+          inside an element. It ignores hidden elements and renders the text as
+          the user sees it. textContent gets or sets the plain text content
+          inside an element, ignoring any HTML tags. It includes hidden text
+          too.
+        </p>
+      </div>
+      <div class="bg-white rounded-lg mt-6">
+        <p class="p-4 font-bold">
+          Question-3: What is event delegation in the DOM?
+        </p>
+        <hr class="border-t-2 border-gray-200 border-dashed" />
+        <p class="p-4 opacity-80">
+          Event Delegation is a technique in JavaScript where we attach a single
+          event listener to a parent element instead of individual child
+          elements. This allows events to be handled efficiently, especially
+          when dealing with dynamic or multiple child elements. Event delegation
+          helps manage events on dynamically generated elements and improves
+          performance by minimizing the number of event listeners. It takes
+          advantage of event bubbling.
+        </p>
+      </div>
+      <div class="bg-white rounded-lg mt-6">
+        <p class="p-4 font-bold">
+          Question-4: What is event bubbling in the DOM?
+        </p>
+        <hr class="border-t-2 border-gray-200 border-dashed" />
+        <p class="p-4 opacity-80">
+          Event Bubbling is a behavior in the DOM where an event triggered on an
+          element bubbles up through its ancestors in the DOM tree, triggering
+          the same event on each parent element, starting from the target
+          element and up to the root of the document. Event Bubbling is the
+          process where an event triggers an element and then propagates up to
+          its ancestors. It allows parent elements to listen for events on their
+          child elements, which is especially useful in event delegation.
+        </p>
+      </div>
+      <div class="bg-white rounded-lg mt-6">
+        <p class="p-4 font-bold">
+          Question-5: How do you create, add, and remove elements using
+          JavaScript?
+        </p>
+        <hr class="border-t-2 border-gray-200 border-dashed" />
+        <p class="p-4 opacity-80">
+          We can create a new element using the document.createElement() method.
+          We can add the created element to the DOM using methods like
+          appendChild(), insertBefore(), or append(). We can remove an element
+          using the removeChild() or remove() method.
+        </p>
+      </div>
+    </section>
+
+    <script src="js/blogs.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </body>
 </html>
